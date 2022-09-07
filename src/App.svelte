@@ -25,14 +25,14 @@
   $: average =
     feedback.reduce((total, { rating }) => total + rating, 0) / count;
 
-  const deleteFeedback = (e) => {
-    const itemID = e.detail;
-    feedback = feedback.filter((item) => item.id != itemID);
-  };
-
   const addFeedback = (e) => {
     const newFeedback = e.detail;
     feedback = [newFeedback, ...feedback];
+  };
+
+  const deleteFeedback = (e) => {
+    const itemID = e.detail;
+    feedback = feedback.filter((item) => item.id != itemID);
   };
 </script>
 
