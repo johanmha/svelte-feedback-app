@@ -34,7 +34,6 @@
     dispatch('add-feedback', newFeedback);
     //reset state
     text = '';
-    rating = 10;
   };
 </script>
 
