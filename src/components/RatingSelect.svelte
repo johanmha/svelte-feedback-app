@@ -16,7 +16,7 @@
   ];
   const selectRating = (e) => {
     selected = e.target.defaultValue;
-    dispatch('select-rating', selected);
+    dispatch('rating-select', selected);
   };
 </script>
 
