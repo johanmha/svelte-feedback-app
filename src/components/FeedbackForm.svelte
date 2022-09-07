@@ -1,10 +1,10 @@
 <script>
   import Card from "./Card.svelte";
   import Button from "./Button.svelte";
-  export let message = "";
-  export let disabled = true;
-  export let text = "";
-  export let min = 10;
+  let message = "";
+  let disabled = true;
+  let text = "";
+  let min = 10;
 
   const handleInput = () => {
     if (text.trim().length <= min) {
@@ -26,7 +26,7 @@
     <div class="input-group">
       <input
         type="text"
-        placeholder="Tell us somthing good or bad you experienced with us"
+        placeholder="Tell us your opinion"
         on:input={handleInput}
         bind:value={text}
       />

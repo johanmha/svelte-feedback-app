@@ -5,7 +5,7 @@
 
   const dispatch = createEventDispatcher();
 
-  let deleteFeedback = (itemID) => {
+  const deleteFeedback = (itemID) => {
     dispatch("delete-feedback", itemID);
   };
 </script>
