@@ -50,8 +50,8 @@
       <input
         type="text"
         placeholder="Give us your feedback"
-        on:input={handleInput}
         bind:value={text}
+        on:input={handleInput}
       />
       <Button {disabled} type="submit">Send</Button>
     </div>
