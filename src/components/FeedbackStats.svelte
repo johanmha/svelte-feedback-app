@@ -7,7 +7,9 @@
 
 <div class="feedback-stats">
   <h4>{count} Reviews</h4>
-  <h4>Ratings Average {average}</h4>
+  <h4>
+    {!isNaN(average) ? 'Ratings Average ' + average.toFixed(2) : 'No feedback'}
+  </h4>
 </div>
 
 <style>
